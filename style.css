@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f5f5f5;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 900px;
+    padding: 20px;
+    background-color: white;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff4d4f;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#search {
+    padding: 10px;
+    width: 200px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    outline: none;
+}
+
+nav {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    padding-bottom: 10px;
+    overflow-x: auto;
+    width: 100%;
+    max-width: 900px;
+}
+
+.category-btn {
+    padding: 8px 15px;
+    background-color: #ff4d4f;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.category-btn.active {
+    background-color: #f9a825;
+}
+
+.container {
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.emoji-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(70px, 1fr)); 
+    gap: 15px;
+    padding: 20px;
+    width: 100%;
+    max-width: 900px;
+}
+
+.emoji-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    background-color: #ffe0b2;
+    border-radius: 15px;
+    width: 70px;
+    height: 70px;
+    transition: transform 0.2s;
+    cursor: pointer;
+}
+
+.emoji-item:hover {
+    transform: scale(1.1);
+}

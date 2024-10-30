@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emoji Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <span>😀</span> Emoji
+        </div>
+        <input type="text" id="search" placeholder="Search...">
+    </header>
+    <nav>
+        <button class="category-btn active" data-category="All">All</button>
+        <button class="category-btn" data-category="Face">Face</button>
+        <button class="category-btn" data-category="Heart">Heart</button>
+        <button class="category-btn" data-category="Book">Book</button>
+        <button class="category-btn" data-category="Hand">Hand</button>
+        <button class="category-btn" data-category="Sports">Sports</button>
+        <button class="category-btn" data-category="Flag">Flag</button>
+    </nav>  
+    <div class="container">
+        <div class="emoji-grid" id="emoji-grid"></div>
+    </div>
+    <script src="emoji.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
